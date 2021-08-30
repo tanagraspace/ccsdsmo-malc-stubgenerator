@@ -1,2 +1,2 @@
-# stubgenerator_c
-Stub Generator for CCSDS MAL C API
+# StubGenerator_C for OPS-SAT
+Stub Generator for CCSDS MAL C API. Forked from CNES's repo to include minor fixes for the European Space Agency's [OPS-SAT Spacecraft](https://opssat1.esoc.esa.int/). Note that the version is kept at 1.4.0 despite modifications.
