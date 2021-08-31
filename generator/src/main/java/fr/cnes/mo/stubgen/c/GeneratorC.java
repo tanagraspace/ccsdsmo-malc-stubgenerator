@@ -1453,8 +1453,11 @@ public class GeneratorC extends GeneratorBase
   	    		compCStructDef.addStructField("unsigned char", fieldPrefix + cfDetails.fieldName + "_attribute_tag");
   	    		compCStructDef.addStructField("union mal_attribute_t", fieldPrefix + cfDetails.fieldName);
 
-  	    		// add field accessors
+  	    		// add field accessors for attribute tags
   	    		addAttributeFieldAccessors(compositeH, compCStructAccess, compCtxt.mapCompNameL, cfDetails.fieldName);
+
+  	    		// add field accessors for attributes
+  	    		addCompFieldAccessors(compositeH, compCStructAccess, compCtxt.mapCompNameL, "union mal_attribute_t", cfDetails.fieldName);
   	  		}
   	  		else
   	  		{
